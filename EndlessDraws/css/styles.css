@@ -24,8 +24,8 @@ a{
 }
 a:hover,
 a:active {
-    padding: 18px;
-    border-radius: 15px;
+    padding: 100% 18px 18px 18px;
+    border-radius: 0 0 15px 15px;
     background-color: #455988d8;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* add the shadow box */
 }
@@ -37,7 +37,7 @@ h1{
 
 #header1 {
     z-index: 1;
-    background-color:#3c4d7425;
+    background-color:#9299aa85;
 }
 #header2 {
     z-index: 1;
@@ -48,6 +48,49 @@ h1{
     background-color:#1b2f61;
     color: #ffffff;
 }
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown-menu {
+    top: 47px;
+    left: -20px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f198;
+    border-radius: 25px;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.custom-dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+
+.custom-dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.custom-dropdown:hover .custom-dropdown-menu {
+    display: block;
+}
+
+.custom-dropdown:hover > a {
+    padding: 10px 18px 18px 18px;
+    border-radius: 0 0 15px 15px;
+    background-color: #455988d8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Enlarging pictures */
 
 .enlarged-picture-container {
     position: fixed;
