@@ -16,7 +16,7 @@
         <!-- The first row holds a crousel of images with the header overlayed on top -->
         <div class="row">
             <div class="container-fluid position-relative w-100 p-0">
-                <h1 class="fw-bold display-1 position-absolute top-0 start-50 translate-middle-x z-index-1 w-100 h-100" id="header1">EndlessDraws</h1>
+                <h1 class="fw-bold display-1 position-absolute start-50 translate-middle-x z-index-1 w-100 h-100" id="header1">EndlessDraws</h1>
                 <h1 class="fw-bold position-absolute top-50 start-50 translate-middle-x z-index-1 w-100" id="header2">Artist and Illustrator </h1>
                 <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
@@ -47,7 +47,6 @@
         <ul class="d-flex justify-content-evenly list-unstyled pt-2">
             <li><a href="index.php?gallery=true" class="text-reset text-decoration-none fs-5">Gallery</a></li>
             <li><a href="index.php?about=true" class="text-reset text-decoration-none fs-5">About</a></li>
-            <li><a href="index.php?contact=true" class="text-reset text-decoration-none fs-5">Get in Touch</a></li>
             <li><a href="index.php?shop=true" class="text-reset text-decoration-none fs-5">Shop</a></li>
         </ul>
     </Nav>
@@ -62,7 +61,25 @@
         }
     ?>
 
+<script>
+    const pictures = document.querySelectorAll('.picture');
+    const body = document.querySelector('body');
 
+    pictures.forEach(picture => {
+    picture.addEventListener('click', () => {
+        const enlargedPicture = document.createElement('div');
+        const pictureSrc = picture.getAttribute('src');
+        enlargedPicture.innerHTML = `<img src="${pictureSrc}" class="enlarged-picture">`;
+        enlargedPicture.classList.add('enlarged-picture-container');
+        body.appendChild(enlargedPicture);
+        enlargedPicture.classList.add('dark-screen');
+        enlargedPicture.addEventListener('click', () => {
+        body.removeChild(enlargedPicture);
+        body.classList.remove('dark-screen');
+        });
+    });
+    });
+</script>
 
 
 
