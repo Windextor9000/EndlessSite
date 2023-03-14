@@ -12,11 +12,12 @@
 
 <body>
     <!-- This is the nav bar that holds the title and list of links. It is made up of rows and columns. -->
-    <Nav class="container-fluid text-center" id="NavBar">
+    <Nav class="container-fluid text-center">
         <!-- The first row holds a crousel of images with the header overlayed on top -->
         <div class="row">
             <div class="container-fluid position-relative w-100 p-0">
-                <h1 class="fw-bold display-1 position-absolute top-0 start-50 translate-middle-x z-index-1 pt-2 w-100 h-100" id="header">EndlessDraws</h1>
+                <h1 class="fw-bold display-1 position-absolute top-0 start-50 translate-middle-x z-index-1 w-100 h-100" id="header1">EndlessDraws</h1>
+                <h1 class="fw-bold position-absolute top-50 start-50 translate-middle-x z-index-1 w-100" id="header2">Artist and Illustrator </h1>
                 <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -42,7 +43,7 @@
 
         </div>
         <!-- The second row is for the list of anchor tags -->
-        <div class="row">
+        <div class="row" id="navList">
         <ul class="d-flex justify-content-evenly list-unstyled pt-2">
             <li><a href="index.php?gallery=true" class="text-reset text-decoration-none fs-5">Gallery</a></li>
             <li><a href="index.php?about=true" class="text-reset text-decoration-none fs-5">About</a></li>
@@ -55,6 +56,9 @@
         if (isset($_GET['gallery'])) {
         // Display example page
         include('gallery.php');
+        }
+        else{
+            include('gallery.php');
         }
     ?>
 

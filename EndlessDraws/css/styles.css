@@ -1,20 +1,10 @@
+/* Whole page */
 body{
-    background-color:#3c4d74 ;
+    background-color:#3c4d74;
 }
 
-h1{
-    font-family: Aboreto;
-}
 
-#NavBar{
-    background-color:#3c4d74 ;
-}
-
-#header {
-    z-index: 1;
-    background-color:#84868b31 ;
-}
-
+/* Carousel */
 .picture-wall {
     display: flex;
     flex-wrap: wrap;
@@ -25,17 +15,36 @@ h1{
 }
  
 .picture-wall img {
-    
-    max-width: 30%;
+    max-width: 35%;
     max-height: 100%;
     padding: 5px;
 }
 a{
-    padding: 5px;
+    padding: 18px;
 }
 a:hover,
 a:active {
+    padding: 18px;
+    border-radius: 15px;
     background-color: #455988d8;
-  color: #fff; /* change the link color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* add the shadow box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* add the shadow box */
+}
+
+/* nav Bar */
+h1{
+    font-family: Aboreto;
+}
+
+#header1 {
+    z-index: 1;
+    background-color:#3c4d7425;
+}
+#header2 {
+    z-index: 1;
+}
+
+#navList{
+    border-radius: 0px 0px 50px 50px;
+    background-color:#1b2f61;
+    color: #ffffff;
 }
