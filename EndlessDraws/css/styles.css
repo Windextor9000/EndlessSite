@@ -3,6 +3,11 @@ body{
     background-color:#3c4d74;
 }
 
+.content{
+    background-color:#4d5b7e ;
+}
+
+
 
 /* Carousel */
 .picture-wall {
@@ -19,6 +24,7 @@ body{
     max-height: 100%;
     padding: 5px;
 }
+
 a{
     padding: 18px;
 }
@@ -118,6 +124,5 @@ h1{
 /* About section */
 
 .about{
-    background-color:#4d5b7e ;
+    font-size: 2em;
 }
-

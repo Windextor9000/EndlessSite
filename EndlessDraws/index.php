@@ -10,7 +10,7 @@
     <title>EndlessDraws</title>
 </head>
 
-<body>
+<body class="container h-100">
     <!-- This is the nav bar that holds the title and list of links. It is made up of rows and columns. -->
     <nav class="container-fluid text-center">
         <!-- The first row holds a crousel of images with the header overlayed on top -->
@@ -61,23 +61,22 @@
     </Nav>
 
 
-    <div class="about container p-5 h-100%">
+    <div class="content container p-5 h-100% rounded">
 
-    <?php
-        if (isset($_GET['gallery'])) {
-        // Display example page
-        include('gallery.php');
-        }
-        else if(isset($_GET['about'])){
-            include('about.php');
-        }
-        else{
+        <?php
+            if (isset($_GET['gallery'])) {
+            // Display example page
             include('gallery.php');
-        }
-    ?>
+            }
+            else if(isset($_GET['about'])){
+                include('about.php');
+            }
+            else{
+                include('gallery.php');
+            }
+        ?>
 
-
-</div>
+    </div>
 
 
     
