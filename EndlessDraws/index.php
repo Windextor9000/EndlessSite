@@ -44,30 +44,32 @@
         </div>
         <!-- The second row is for the list of anchor tags -->
         <div class="row" id="navList">
-        <ul class="d-flex justify-content-evenly list-unstyled pt-2">
-            <li><a href="index.php?gallery=true" class="text-reset text-decoration-none fs-5">Gallery</a></li>
-            <li><a href="index.php?about=true" class="text-reset text-decoration-none fs-5">About</a></li>
+            <ul class="d-flex justify-content-evenly list-unstyled pt-2">
+                <li><a href="index.php?gallery=true" class="text-reset text-decoration-none fs-5">Gallery</a></li>
+                <li><a href="index.php?about=true" class="text-reset text-decoration-none fs-5">About</a></li>
 
-
-            <!-- Existing list item for Shop -->
-            <li class="custom-dropdown">
-            <a href="#" class="text-reset text-decoration-none fs-5">Shop</a>
-            <div class="custom-dropdown-menu">
-                <a href="https://www.fiverr.com/your_username">Fivver</a>
-                <a href="index.php?commissions=true">Commissions</a>
-            </div>
-            </li>
-
-
-                
-        
-        </ul>
+                <!-- Existing list item for Shop -->
+                <li class="custom-dropdown">
+                <a href="#" class="text-reset text-decoration-none fs-5">Shop</a>
+                <div class="custom-dropdown-menu">
+                    <a href="https://www.fiverr.com/your_username">Fiverr</a>
+                    <a href="index.php?commissions=true">Commissions</a>
+                </div>
+                </li>
+            </ul>
+        </div>
     </Nav>
+
+
+    <div class="about container p-5 h-100%">
 
     <?php
         if (isset($_GET['gallery'])) {
         // Display example page
         include('gallery.php');
+        }
+        else if(isset($_GET['about'])){
+            include('about.php');
         }
         else{
             include('gallery.php');
@@ -75,7 +77,7 @@
     ?>
 
 
-
+</div>
 
 
     
