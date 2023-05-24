@@ -9,20 +9,19 @@ body{
 
 
 
-/* Carousel */
+/* Gallery */
 .picture-wall {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    
 }
  
 .picture-wall img {
-    max-width: 35%;
+    max-width: 40%;
     max-height: 100%;
-    padding: 5px;
+    padding-bottom: 30px;
 }
 
 a{
@@ -61,8 +60,8 @@ h1{
 }
 
 .custom-dropdown-menu {
-    top: 47px;
-    left: -20px;
+    top: 150%;
+    left: 5px;
     display: none;
     position: absolute;
     background-color: #f1f1f198;
@@ -76,7 +75,8 @@ h1{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
 }
 

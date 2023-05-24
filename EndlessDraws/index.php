@@ -18,7 +18,7 @@
             <div class="container-fluid position-relative w-100 p-0">
                 <h1 class="fw-bold display-1 position-absolute start-50 translate-middle-x z-index-1 w-100 h-100" id="header1">EndlessDraws</h1>
                 <h1 class="fw-bold position-absolute top-50 start-50 translate-middle-x z-index-1 w-100" id="header2">Artist and Illustrator </h1>
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/Mouse.jpg" class="object-fit-cover w-100" height="200px">
@@ -58,11 +58,9 @@
                 </li>
             </ul>
         </div>
-    </Nav>
+    </nav>
 
-
-    <div class="content container p-5 h-100% rounded">
-
+    <div class="content container py-4 h-100% w-100% rounded ">
         <?php
             if (isset($_GET['gallery'])) {
             // Display example page
@@ -75,11 +73,8 @@
                 include('gallery.php');
             }
         ?>
-
     </div>
 
-
-    
     <script src="javascript/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
