@@ -13,7 +13,7 @@
 <body class="container h-100">
     <!-- This is the nav bar that holds the title and list of links. It is made up of rows and columns. -->
     <nav class="container-fluid text-center">
-        <!-- The first row holds a crousel of images with the header overlayed on top -->
+        <!-- The first row holds a carousel of images with the header overlayed on top -->
         <div class="row">
             <div class="container-fluid position-relative w-100 p-0">
                 <h1 class="fw-bold display-1 position-absolute start-50 translate-middle-x z-index-1 w-100 h-100" id="header1">EndlessDraws</h1>
@@ -53,7 +53,7 @@
                 <a href="#" class="text-reset text-decoration-none fs-5">Shop</a>
                 <div class="custom-dropdown-menu">
                     <a href="https://www.fiverr.com/your_username">Fiverr</a>
-                    <a href="index.php?commissions=true">Commissions</a>
+                    <a href="index.php?commissions=true">Etsy</a>
                 </div>
                 </li>
             </ul>
