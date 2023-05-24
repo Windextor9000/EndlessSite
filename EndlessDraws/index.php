@@ -53,7 +53,7 @@
                 <a href="#" class="text-reset text-decoration-none fs-5">Shop</a>
                 <div class="custom-dropdown-menu">
                     <a href="https://www.fiverr.com/your_username">Fiverr</a>
-                    <a href="index.php?commissions=true">Etsy</a>
+                    <a href="https://www.etsy.com/shop/EndlessDraws">Etsy</a>
                 </div>
                 </li>
             </ul>
